@@ -1,0 +1,51 @@
+<h2 class="employee-form-title">{{ isEdit ? 'Edit Employee' : 'Add Employee' }}</h2>
+<form (ngSubmit)="saveEmployee()" class="employee-form">
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="employee.first_name" name="first_name" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="employee.last_name" name="last_name" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="employee.email" name="email" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Gender</mat-label>
+    <input matInput [(ngModel)]="employee.gender" name="gender" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Department</mat-label>
+    <input matInput [(ngModel)]="employee.department" name="department" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Designation</mat-label>
+    <input matInput [(ngModel)]="employee.designation" name="designation" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Date of Joining</mat-label>
+    <input matInput type="date" [(ngModel)]="employee.date_of_joining" name="date_of_joining" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Photo URL (optional)</mat-label>
+    <input matInput [(ngModel)]="employee.employee_photo" name="employee_photo" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Salary</mat-label>
+    <input matInput type="number" [(ngModel)]="employee.salary" name="salary" required />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="submit-button">
+    {{ isEdit ? 'Update' : 'Add' }}
+  </button>
+</form>

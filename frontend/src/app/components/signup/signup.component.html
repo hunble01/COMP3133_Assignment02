@@ -1,0 +1,27 @@
+<div class="signup-form-container">
+  <h2 class="signup-title">Sign Up</h2>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-form">
+    <mat-form-field appearance="outline" class="signup-field">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username" id="username" type="text" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="signup-field">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" id="email" type="email" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="signup-field">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" id="password" type="password" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" type="submit" [disabled]="signupForm.invalid" class="signup-button">
+      Sign Up
+    </button>
+  </form>
+  <p class="signup-link-text">
+    Already have an account?
+    <a [routerLink]="['/login']" class="signup-link-button">Login here</a>
+  </p>
+</div>

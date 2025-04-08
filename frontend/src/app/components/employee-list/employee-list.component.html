@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+  <span style="color: #3f51b5; font-weight: bold;">Employee Management</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<h2 class="employee-title">Employee List</h2>
+
+<table class="employee-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Department</th>
+      <th>Designation</th>
+      <th>Salary</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees" class="employee-row">
+      <td>{{ emp.first_name }} {{ emp.last_name }}</td>
+      <td>{{ emp.email }}</td>
+      <td>{{ emp.gender }}</td>
+      <td>{{ emp.department }}</td>
+      <td>{{ emp.designation }}</td>
+      <td>{{ emp.salary }}</td>
+      <td>
+        <button mat-button class="action-button" (click)="viewEmployee(emp.id)">View</button>
+        <button mat-button class="action-button" (click)="editEmployee(emp.id)">Edit</button>
+        <button mat-button color="warn" class="action-button" (click)="deleteEmployee(emp.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button mat-raised-button color="primary" class="add-employee-button" (click)="addEmployee()">Add New Employee</button>

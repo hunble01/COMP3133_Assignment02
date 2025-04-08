@@ -1,0 +1,171 @@
+.auth-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .auth-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3f51b5; /* Use Material Design colors */
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .signup-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #757575;
+  }
+  
+  a {
+    color: #3f51b5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .signup-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .signup-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff4081; /* Material Design accent color */
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .signup-link-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #757575;
+  }
+  
+  .signup-link-button {
+    color: #ff4081;
+    text-decoration: none;
+  }
+  
+  .signup-link-button:hover {
+    text-decoration: underline;
+  }
+
+  .employee-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #3f51b5; /* Material Design primary color */
+    margin: 20px 0;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-table th {
+    background-color: #3f51b5;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .employee-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .employee-row:hover {
+    background-color: #f9f9f9; /* Light hover effect */
+  }
+  
+  .action-button {
+    margin-right: 10px;
+  }
+  
+  .add-employee-button {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .employee-form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3f51b5; /* Material Design primary color */
+    margin-bottom: 20px;
+  }
+  
+  .employee-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
